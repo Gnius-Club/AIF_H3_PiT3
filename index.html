@@ -369,20 +369,6 @@
             </div>
         </main>
     </div>
-    <script>
-        // Funciones básicas para el funcionamiento de los botones de timer
-        document.querySelectorAll('.timer-start-btn').forEach(button => {
-            button.addEventListener('click', () => {
-                const duration = parseInt(button.getAttribute('data-duration'));
-                alert('Iniciando cronómetro de ' + duration + ' segundos.');
-            });
-        });
-        function copyPrompt(id) {
-            const text = document.getElementById(id).innerText;
-            navigator.clipboard.writeText(text).then(() => {
-                alert('Prompt copiado al portapapeles.');
-            });
-        }
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
